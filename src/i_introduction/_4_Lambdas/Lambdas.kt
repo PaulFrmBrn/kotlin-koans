@@ -20,7 +20,9 @@ fun todoTask3(collection: Collection<Int>): Nothing = TODO(
     documentation = doc3(),
     references = { JavaCode3().task3(collection) })
 
-fun task3(collection: Collection<Int>): Boolean = todoTask3(collection)
+fun task3(collection: Collection<Int>): Boolean {
+    return collection.any({element -> element % 42 == 0})
+}
 
 
 
